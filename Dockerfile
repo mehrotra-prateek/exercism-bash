@@ -11,6 +11,6 @@ ENV workdir=${work_dir}
 
 COPY . /develop
 
-WORKDIR develop/${workdir}
+WORKDIR /develop/${workdir}
 
 CMD ["sh", "-c", "bats $testfile"]
